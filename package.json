@@ -7,5 +7,13 @@
     "start": "echo \"Proyecto no configurado aún\" && exit 1"
   },
   "author": "Omar Crespo <crespomerchano@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
 }
