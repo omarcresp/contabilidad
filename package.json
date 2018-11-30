@@ -1,0 +1,11 @@
+{
+  "name": "contabilidad",
+  "version": "1.0.0",
+  "description": "Simple programa de contabilidad con caracter educativo",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Proyecto no configurado aún\" && exit 1"
+  },
+  "author": "Omar Crespo <crespomerchano@gmail.com>",
+  "license": "MIT"
+}
