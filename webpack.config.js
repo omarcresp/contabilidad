@@ -1,6 +1,7 @@
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
+
 module.exports = {
   mode: 'production',
-  entry: './src/app.js',
   module: {
     rules: [
       {
@@ -12,7 +13,14 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new VueLoaderPlugin()
+  ]
 }
