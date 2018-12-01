@@ -11,7 +11,7 @@ export default {
   data: function () {
     return {
       msg: 'Hola Mundo!',
-      version: '0.2.0A-JC0203',
+      version: '0.2.0A-JC0204',
       enviroment: process.env.NODE_ENV
     }
   }
