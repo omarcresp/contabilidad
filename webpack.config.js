@@ -1,7 +1,12 @@
+require('dotenv').config()
+const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-  mode: 'production',
+  mode: process.env.NODE_ENV,
+  output: {
+    filename: 'bundle.js'
+  },
   module: {
     rules: [
       {
@@ -27,6 +32,12 @@ module.exports = {
     ]
   },
   plugins: [
-    new VueLoaderPlugin()
-  ]
+    new VueLoaderPlugin(),
+    new webpack.EnvironmentPlugin(['NODE_ENV'])
+  ],
+  devServer: {
+    compress: true,
+    port: 9000,
+    open: true
+  }
 }
